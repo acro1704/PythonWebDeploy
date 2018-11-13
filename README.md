@@ -12,3 +12,5 @@ PHP must be installed on the System. At least the var:www needs all rights on th
 # Usage
 Just open the installed directory. You will see the frontend of the system. Here you can add a Repository to the deploys and the place where to put the repository by deploying or just deploy the existing once.
 
+# Note
+To protect against abuse - you should install ".htacces" and set a password on the file/folder.
