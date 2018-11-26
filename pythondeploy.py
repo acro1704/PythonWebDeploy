@@ -6,7 +6,7 @@ gitlink = []
 deploypath = []
 i = 0
 
-print ("Reading GIT-Links and deploypaths")
+print ("Reading GIT-Links and deploypaths <br>")
 
 with open("gitlinks.txt", "r") as flash:
     for line in flash:
@@ -16,14 +16,19 @@ with open("deploypath.txt", "r") as flash:
     for line in flash:
         deploypath.extend(line.split())
 
-print ("starting cloning")
+print ("Reading successful!<br>")
 
 for item in gitlink:
+	print ("<h1>Starting Cloning from:</h1> ");
+	print (gitlink[i]);
+	print ("<br> to:");
+	print (deploypath[i]);
+	print ("<br>");
 	if os.path.exists(deploypath[i]):
     		shutil.rmtree(deploypath[i])
-		print("update folder")
+		print("Path already exists. Update folder. <br>")
 	Repo.clone_from(gitlink[i], deploypath[i])
 	i = i +1 
-	print ("deploy succsessfull")
+	print ("Deploy succsessfull <br>")
 
-print ("all GIT repositories successfully deployed!")
+print ("<h1>All GIT repositories successfully deployed!</h1>")
