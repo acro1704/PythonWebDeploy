@@ -16,9 +16,8 @@
 		
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="index.php">Speedport</a></li>
-				<li class="breadcrumb-item"><a href="https://www.zebradem.com/wiki/index.php?title=Router_Standardpassw%C3%B6rter">Others</a></li>
-				<li class="breadcrumb-item"><a href="https://github.com/valplusplusle/WIFI-Standard-Password-Calculator">GitHub</a></li>
+				<li class="breadcrumb-item"><a href="https://github.com/valplusplusle/PythonWebDeploy">GitHub</a></li>
+				<li class="breadcrumb-item"><a href="https://github.com/valplusplusle/PythonWebDeploy">Debug-Log</a></li>
 			</ol>
 		</nav>
 		
@@ -50,9 +49,6 @@
 	
 	
 	</div>
-	
-
-
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
