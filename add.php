@@ -16,7 +16,7 @@ if ( $_POST['link'] <> "" )
 		//close stream
     		fclose ( $handle );	
 
-    echo '<h1>Inhalt gespeichert</h1>';
+    header("Location: index.php");
     // Datei wird nicht weiter ausgef?hrt
 	exit;
 }
