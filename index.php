@@ -23,10 +23,15 @@
 		
 		<?php
 		$gitListArray = explode("\n",file_get_contents("gitlinks.txt"));
+		$gitListArray2 = explode("\n",file_get_contents("deploypath.txt"));
+		$counter = 0;
 		foreach ($gitListArray as $gitListArrayItem) {
-		echo "<p class='list-group-item'>";
-		echo $gitListArrayItem;
-		echo "</p>";
+			echo "<a href='" . $gitListArray2[$counter] . "'>";
+			echo "<p class='list-group-item'>";
+			echo $gitListArrayItem;
+			echo "</p>";
+			echo "</a>";
+			$counter ++;
 		}
 		?>
 		<form action="deploy.php" method="post" align="center">
